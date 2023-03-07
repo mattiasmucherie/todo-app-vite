@@ -1,0 +1,50 @@
+:root {
+  --btn-color: #1976d2;
+  --filter-btn-color: #302f2f;
+  --remove-btn-color: #ff5722;
+}
+.App {
+  padding: 2rem;
+}
+
+ul li.NotDone {
+  color: #f73f3b;
+}
+ul li.Done {
+  color: #73e061;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  background: none;
+  transition: 0.5s;
+  border: 2px solid var(--btn-color);
+  /* color: var(--btn-color); */
+  background-color: var(--btn-color);
+  color: white;
+}
+
+button.Remove {
+  border-radius: 5px;
+  border: 2px solid var(--remove-btn-color);
+  background-color: var(--remove-btn-color);
+}
+
+.FilterController {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.FilterController button {
+  background-color: white;
+  border: 2px solid var(--filter-btn-color);
+  color: var(--filter-btn-color);
+}
+.FilterController button:hover,
+.FilterController button.Active {
+  background-color: var(--filter-btn-color);
+  color: white;
+}
